@@ -20,3 +20,47 @@ Aplikasi ini dilengkapi dengan fitur login agar akses data dapat dijaga keamanan
 - Controller di `app/Http/Controllers` menangani logika aplikasi dan proses permintaan dari pengguna.  
 - User Interface dibuat dengan Blade templating di `resources/views`, menyediakan tampilan halaman login, halaman bahan baku, dan halaman pemesanan.  
 - Desain halaman dibuat sederhana dan responsif agar mudah digunakan oleh pengguna.
+
+### Cara Instalasi Aplikasi
+
+1. **Clone repository dari GitHub:**
+
+   ```bash
+   git clone https://github.com/usernamekamu/namarepo.git
+   cd namarepo
+   ```
+
+2. **Install dependency dengan Composer:**
+
+   ```bash
+   composer install
+   ```
+
+3. **Buat file konfigurasi `.env`:**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Generate application key:**
+
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Lakukan migrasi database dan isi data awal:**
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. **Jalankan server lokal Laravel:**
+
+   ```bash
+   php artisan serve
+   ```
+
+7. **Akses aplikasi melalui browser:**
+
+   ```
+   http://127.0.0.1:8000
